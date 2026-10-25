@@ -48,4 +48,6 @@ cp .env.example .env
 
 6. Open and edit it.
 
-7. Almost there!
+### Run
+
+> I need to sleep. Let's cover this part later...
