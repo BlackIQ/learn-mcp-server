@@ -29,6 +29,17 @@ def subtract(a: int, b: int):
     return a - b
 
 
+@mcp.tool(
+    name="multiply",
+    title="Multiply",
+    description="Multiply 2 numbers",
+)
+def multiply(a: int, b: int):
+    """Multiply 2 numbers"""
+
+    return a * b
+
+
 # The application runner
 def main():
     mcp.run(transport="streamable-http", port=8002)
