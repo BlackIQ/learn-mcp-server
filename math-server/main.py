@@ -62,6 +62,17 @@ def power(x: int, y: int):
     return math.pow(x, y)
 
 
+@mcp.tool(
+    name="square_root",
+    title="Square root",
+    description="Get square root of a number",
+)
+def square_root(x: int):
+    """Get square root of a number"""
+
+    return math.sqrt(x)
+
+
 # The application runner
 def main():
     mcp.run(transport="streamable-http", port=8002)
