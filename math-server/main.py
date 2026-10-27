@@ -40,6 +40,17 @@ def multiply(a: int, b: int):
     return a * b
 
 
+@mcp.tool(
+    name="divide",
+    title="Divide",
+    description="Divide 2 numbers",
+)
+def divide(a: int, b: int):
+    """Divide 2 numbers"""
+
+    return a / b
+
+
 # The application runner
 def main():
     mcp.run(transport="streamable-http", port=8002)
