@@ -8,50 +8,6 @@ mcp = MCPServer("Math MCP")
 
 
 @mcp.tool(
-    name="add",
-    title="Add",
-    description="Add 2 numbers",
-)
-def add(a: int, b: int):
-    """Add 2 numbers"""
-
-    return a + b
-
-
-@mcp.tool(
-    name="subtract",
-    title="Subtract",
-    description="Subtract 2 numbers",
-)
-def subtract(a: int, b: int):
-    """Subtract 2 numbers"""
-
-    return a - b
-
-
-@mcp.tool(
-    name="multiply",
-    title="Multiply",
-    description="Multiply 2 numbers",
-)
-def multiply(a: int, b: int):
-    """Multiply 2 numbers"""
-
-    return a * b
-
-
-@mcp.tool(
-    name="divide",
-    title="Divide",
-    description="Divide 2 numbers",
-)
-def divide(a: int, b: int):
-    """Divide 2 numbers"""
-
-    return a / b
-
-
-@mcp.tool(
     name="power",
     title="Power",
     description="Get the value of x raised to power y",
