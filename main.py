@@ -84,6 +84,17 @@ def atan(x: int):
     return math.atan(x)
 
 
+@mcp.tool(
+    name="atan2",
+    title="arc tangent",
+    description="The atan2 method returns the arc tangent of y/x, in radians. Where x and y are the coordinates of a point (x,y)",
+)
+def atan2(x: int, y: int):
+    """The atan2 method returns the arc tangent of y/x, in radians. Where x and y are the coordinates of a point (x,y)"""
+
+    return math.atan2(x, y)
+
+
 # The application runner
 def main():
     mcp.run(transport="streamable-http", port=8002)
