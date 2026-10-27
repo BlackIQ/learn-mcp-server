@@ -125,13 +125,49 @@ def atanh(x: int):
     """
     The atanh tool returns the inverse hyperbolic tangent of a number
 
-    Note: The parameter passed in math.atanh() must lie between -0.99 to 0.99.
+    Note: The parameter passed in atanh must lie between -0.99 to 0.99.
 
     Args:
         - x: Required. A positive or negative number between -0.99 and 0.99
     """
 
     return math.atanh(x)
+
+
+@mcp.tool(
+    name="ceil",
+    title="rounds a number up",
+    description="The ceil tool rounds a number UP to the nearest integer, if necessary, and returns the result",
+)
+def ceil(x: int):
+    """
+    The ceil tool rounds a number UP to the nearest integer, if necessary, and returns the result
+
+    Tip: To round a number DOWN to the nearest integer, look at the floor method.
+
+    Args:
+        - x: Required. Specifies the number to round up
+    """
+
+    return math.ceil(x)
+
+
+@mcp.tool(
+    name="floor",
+    title="rounds a number down",
+    description="The floor tool rounds a number DOWN to the nearest integer, if necessary, and returns the result",
+)
+def floor(x: int):
+    """
+    The floor tool rounds a number DOWN to the nearest integer, if necessary, and returns the result.
+
+    Tip: To round a number UP to the nearest integer, look at the ceil method.
+
+    Args:
+        - x: Required. Specifies the number to round down
+    """
+
+    return math.floor(x)
 
 
 # The application runner
