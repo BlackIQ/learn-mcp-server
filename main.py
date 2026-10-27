@@ -73,6 +73,17 @@ def asinh(x: int):
     return math.asinh(x)
 
 
+@mcp.tool(
+    name="atan",
+    title="arc tangent",
+    description="The atan tool returns the arc tangent of a number (x) as a numeric value between -PI/2 and PI/2 radians",
+)
+def atan(x: int):
+    """The atan tool returns the arc tangent of a number (x) as a numeric value between -PI/2 and PI/2 radians"""
+
+    return math.atan(x)
+
+
 # The application runner
 def main():
     mcp.run(transport="streamable-http", port=8002)
