@@ -76,12 +76,34 @@ def square_root(x: int):
 @mcp.tool(
     name="acos",
     title="arc cosine",
-    description="The acos method returns the arc cosine value of a number",
+    description="The acos tool returns the arc cosine value of a number",
 )
 def acos(x: int):
-    """The acos method returns the arc cosine value of a number"""
+    """The acos method tool the arc cosine value of a number"""
 
     return math.acos(x)
+
+
+@mcp.tool(
+    name="acosh",
+    title="inverse hyperbolic cosine",
+    description="The acosh tool returns the inverse hyperbolic cosine of a number",
+)
+def acosh(x: int):
+    """The acosh tool returns the inverse hyperbolic cosine of a number"""
+
+    return math.acosh(x)
+
+
+@mcp.tool(
+    name="asin",
+    title="inverse hyperbolic cosine",
+    description="The math.asin() method returns the arc sine of a number",
+)
+def asin(x: int):
+    """The acosh tool returns the inverse hyperbolic cosine of a number"""
+
+    return math.asin(x)
 
 
 # The application runner
