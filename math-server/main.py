@@ -73,6 +73,17 @@ def square_root(x: int):
     return math.sqrt(x)
 
 
+@mcp.tool(
+    name="acos",
+    title="arc cosine",
+    description="The acos method returns the arc cosine value of a number",
+)
+def acos(x: int):
+    """The acos method returns the arc cosine value of a number"""
+
+    return math.acos(x)
+
+
 # The application runner
 def main():
     mcp.run(transport="streamable-http", port=8002)
