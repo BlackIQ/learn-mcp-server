@@ -53,11 +53,11 @@ def acosh(x: int):
 
 @mcp.tool(
     name="asin",
-    title="inverse hyperbolic cosine",
-    description="The math.asin() method returns the arc sine of a number",
+    title="arc sine",
+    description="The asin tool returns the arc sine of a number",
 )
 def asin(x: int):
-    """The acosh tool returns the inverse hyperbolic cosine of a number"""
+    """The asin tool returns the arc sine of a number"""
 
     return math.asin(x)
 
