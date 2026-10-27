@@ -86,13 +86,24 @@ def atan(x: int):
 
 @mcp.tool(
     name="atan2",
-    title="arc tangent",
+    title="arc tangent of y/x",
     description="The atan2 method returns the arc tangent of y/x, in radians. Where x and y are the coordinates of a point (x,y)",
 )
 def atan2(x: int, y: int):
     """The atan2 method returns the arc tangent of y/x, in radians. Where x and y are the coordinates of a point (x,y)"""
 
     return math.atan2(x, y)
+
+
+@mcp.tool(
+    name="atan2",
+    title="inverse hyperbolic tangent",
+    description="The atanh tool returns the inverse hyperbolic tangent of a number",
+)
+def atan2(x: int):
+    """The atanh tool returns the inverse hyperbolic tangent of a number"""
+
+    return math.atanh(x)
 
 
 # The application runner
