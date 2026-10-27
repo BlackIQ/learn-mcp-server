@@ -51,6 +51,17 @@ def divide(a: int, b: int):
     return a / b
 
 
+@mcp.tool(
+    name="power",
+    title="Power",
+    description="Get the value of x raised to power y",
+)
+def power(x: int, y: int):
+    """Get the value of x raised to power y"""
+
+    return math.pow(x, y)
+
+
 # The application runner
 def main():
     mcp.run(transport="streamable-http", port=8002)
