@@ -62,6 +62,17 @@ def asin(x: int):
     return math.asin(x)
 
 
+@mcp.tool(
+    name="asinh",
+    title="inverse hyperbolic sine",
+    description="The asinh tool returns the inverse hyperbolic sine of a number",
+)
+def asinh(x: int):
+    """The asinh tool returns the inverse hyperbolic sine of a number"""
+
+    return math.asinh(x)
+
+
 # The application runner
 def main():
     mcp.run(transport="streamable-http", port=8002)
